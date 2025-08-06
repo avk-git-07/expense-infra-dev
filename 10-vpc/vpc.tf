@@ -1,5 +1,5 @@
 module "vpc" {
-    source = "../../terraform-aws-vpc-1"
+    source = "git::https://github.com/avk-git-07/terraform-aws-vpc.git?ref=main"
     project_name = var.project_name_rm
     environment = var.environment_rm
     enable_dns_hostnames = var.enable_dns_hostnames_rm
